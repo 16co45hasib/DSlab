@@ -70,7 +70,14 @@ void convert(char in[],char post[])
 }
 int priority(char in)
 {
-if(in=='*'
+if(in=='$')
+ return 3;
+if(in=='+'||in=='-')
+ return 2; return 1;
+else
+ return 0;
+}
+}
 				
 				
 	
